@@ -10,7 +10,6 @@ function calculateGradeTraditional(mark: number): string {
         return "Fail";
     }
 }
-
 // Arrow Function
 const calculateGradeArrow = (mark: number): string => {
     if (mark >= 90) {
@@ -23,16 +22,15 @@ const calculateGradeArrow = (mark: number): string => {
         return "Fail";
     }
 };
-
 // Shorthand Arrow Function
 const getStudentName = (name: string): string => `Student: ${name}`;
 
-const marks = 82;
+const marks: number = 82;
 
-console.log(getStudentName("pandu"));
+console.log(getStudentName("Pandu"));
 
-const result1 = calculateGradeTraditional(marks);
+const result1: string = calculateGradeTraditional(marks);
 console.log(`Traditional Function Result: ${result1}`);
 
-const result2 = calculateGradeArrow(marks);
+const result2: string = calculateGradeArrow(marks);
 console.log(`Arrow Function Result: ${result2}`);
